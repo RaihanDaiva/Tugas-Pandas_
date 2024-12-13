@@ -3,9 +3,10 @@ import pandas as pd
 # No 1 ()
 print("No 1")
 data_sampah = pd.read_excel('disperkim-od_16985_jumlah_produksi_sampah_berdasarkan_kabupatenkota_v3_data.xlsx')
-print(data_sampah[['nama_kabupaten_kota', 'jumlah_produksi_sampah', 'tahun']])
-data_sampah.to_csv('no_1.csv', index=False)
-data_sampah.to_excel('no_1.xlsx', index=False)
+df1 = data_sampah[['nama_kabupaten_kota', 'jumlah_produksi_sampah', 'tahun']]
+print(df1)
+df1.to_csv('no_1.csv', index=False)
+df1.to_excel('no_1.xlsx', index=False)
 
 
 # No 2 ()
